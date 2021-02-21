@@ -1,0 +1,39 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/action1.icon",
+      "Name": "Your first action",
+      "States": [
+        {
+          "Image": "images/action1.key",
+          "TitleAlignment": "middle",
+          "FontSize": "15"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "",
+      "UUID": "reverse.dns.formatted.namespace.action"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "your name",
+  "CodePath": "plugin.html",
+  "PropertyInspectorPath": "propertyinspector.html",
+  "Name": "streamdeck template",
+  "Description": "a description",
+  "Icon": "images/pluginIcon",
+  "Version": "0.0.0-development",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.1"
+  }
+}
