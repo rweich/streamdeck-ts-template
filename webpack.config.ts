@@ -16,8 +16,8 @@ const config = (env: unknown, options: { mode: string; env: unknown }): webpack.
 
   return {
     entry: {
-      plugin: './src/plugin.ts',
-      propertyinspector: './src/propertyinspector.ts',
+      plugin: './build/entries/pluginEntry.ts',
+      propertyinspector: './build/entries/propertyinspectorEntry.ts',
     },
     target: 'web',
     output: {

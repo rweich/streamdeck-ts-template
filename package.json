@@ -6,13 +6,13 @@
   "author": "rweich",
   "license": "MIT",
   "scripts": {
-    "ci": "yarn type-check && yarn lint",
+    "ci": "yarn type-check && yarn lint && yarn set-plugin-version 0.0.0",
     "clean": "rimraf ./dist/*",
     "build": "yarn clean && webpack --mode=development",
     "build-prod": "yarn clean && webpack --mode=production",
     "lint": "eslint ./src/**/*.ts",
     "prepare": "husky install",
-    "set-plugin-version": "ts-node scripts/set-plugin-version.ts",
+    "set-plugin-version": "ts-node build/scripts/set-plugin-version.ts",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {

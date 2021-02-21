@@ -1,8 +1,11 @@
-import { Streamdeck } from '@rweich/streamdeck-ts';
+import { IncomingEvents, Streamdeck } from '@rweich/streamdeck-ts';
 
 const pi = new Streamdeck().propertyinspector();
 
 // your code here..
+pi.on(IncomingEvents.OnWebsocketOpen, (event) => {
+  console.log('got websocket-open-event!', event);
+  // eg. register input event listeners ...
+});
 
-// this makes sure the streamdeck finds our init function (do not remove!)
-export default pi.createStreamdeckConnector();
+export default pi;

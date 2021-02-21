@@ -20,7 +20,9 @@ yarn install
 
 ### Create
 - overwrite the example code in the [plugin.ts](./src/plugin.ts)
+  - make sure the plugin instance is exported as default export
 - add your code in the [propertyinspector.ts](./src/propertyinspector.ts) (if you want a propertyinspector)
+  - make sure the propertyinspector instance is exported as default export
 
 ### Configure
 - Open the [manifest.json](assets/manifest.json) file and apply the configuration based on the [documentation](https://developer.elgato.com/documentation/stream-deck/sdk/manifest/):
