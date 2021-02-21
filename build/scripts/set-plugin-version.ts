@@ -1,18 +1,21 @@
 import { existsSync } from 'fs';
 import { readFileSync, writeFileSync } from 'jsonfile';
 import * as path from 'path';
-import manifest from '../../assets/manifest.json';
-
-const manifestNs = manifest.Actions[0].UUID.split('.').slice(1, -1).join('.');
-const manifestPath: string = path.join(__dirname, '../../dist/' + manifestNs + '.sdPlugin/manifest.json');
+import { manifestNs } from './manifest';
 
 const version = process.argv[2];
 if (version === undefined) {
-  console.error('❌ Usage: ' + __filename + ' VERSION');
-  process.exit(1);
+  console.error('\n❌ Usage: yarn set-plugin-version <VERSION>\n');
+  process.exit();
 }
+
+let manifestPath: string = path.join(__dirname, '../../dist/' + manifestNs + '.sdPlugin/manifest.json');
 if (!existsSync(manifestPath)) {
-  console.error('❌ file not found: ' + manifestPath);
+  manifestPath = path.join(__dirname, '../../dist/dev.' + manifestNs + '.sdPlugin/manifest.json');
+}
+
+if (!existsSync(manifestPath)) {
+  console.error('❌ could not find manifest.json in prod OR dev dist directories');
   process.exit(1);
 }
 
@@ -26,4 +29,4 @@ if (json.Version !== version) {
   console.error('❌ unknown error on writing version to file ' + manifestPath);
   process.exit(1);
 }
-console.info('✅ version set');
+console.info('✅ version set in file ' + path.relative(process.cwd(), manifestPath));

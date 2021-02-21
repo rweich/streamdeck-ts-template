@@ -1,11 +1,9 @@
 import * as path from 'path';
 import * as webpack from 'webpack';
 import copyWebpackPlugin from 'copy-webpack-plugin';
-import manifest from './assets/manifest.json';
+import { manifestNs, manifestName } from './build/scripts/manifest';
 
 const config = (env: unknown, options: { mode: string; env: unknown }): webpack.Configuration => {
-  const manifestNs = manifest.Actions[0].UUID.split('.').slice(1, -1).join('.');
-  const manifestName = manifest.Name;
   let pluginNs = manifestNs;
   let pluginName = manifestName;
 
@@ -36,7 +34,12 @@ const config = (env: unknown, options: { mode: string; env: unknown }): webpack.
               if (!path.match(/\.(json|html)/)) {
                 return content;
               }
-              return content.toString().replace(manifestNs, pluginNs).replace(manifestName, pluginName);
+              return content
+                .toString()
+                .replace(manifestNs, pluginNs)
+                .replace('{{ PLUGIN_NS }}', pluginNs)
+                .replace(manifestName, pluginName)
+                .replace('{{ PLUGIN_NAME }}', pluginName);
             },
           },
         ],

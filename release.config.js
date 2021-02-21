@@ -1,5 +1,4 @@
-const manifest = require('./assets/manifest.json');
-const manifestNs = manifest.Actions[0].UUID.split('.').slice(1, -1).join('.');
+const manifestNs = require('./build/scripts/manifest').manifestNs;
 
 module.exports = {
   branches: 'main',

@@ -1,5 +1,7 @@
 # streamdeck-ts-template
 
+![Build/Test](https://github.com/rweich/streamdeck-ts-template/workflows/Build%2FTest/badge.svg)
+
 A template repository for creating streamdeck plugins in typescript using the [streamdeck-ts](https://github.com/rweich/streamdeck-ts) library.
 
 Includes / Uses
