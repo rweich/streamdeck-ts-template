@@ -3,10 +3,8 @@ import { readFileSync, writeFileSync } from 'jsonfile';
 import * as path from 'path';
 import manifest from '../assets/manifest.json';
 
-const manifestPath: string = path.join(
-  __dirname,
-  '../dist/' + manifest['streamdeck-plugin'].namespace + '.sdPlugin/manifest.json',
-);
+const manifestNs = manifest.Actions[0].UUID.split('.').slice(1, -1).join('.');
+const manifestPath: string = path.join(__dirname, '../dist/' + manifestNs + '.sdPlugin/manifest.json');
 
 const version = process.argv[2];
 if (version === undefined) {
