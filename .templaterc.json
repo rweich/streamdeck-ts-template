@@ -1,0 +1,17 @@
+{
+  "files": [
+    ".github/**/*",
+    ".husky/**/*",
+    "build/**/*",
+    ".babelrc",
+    ".editorconfig",
+    ".eslintrc.js",
+    ".gitignore",
+    ".templaterc.json",
+    "commitlint.config.js",
+    "prettier.config.js",
+    "release.config.js",
+    "tsconfig.json",
+    "webpack.config.ts"
+  ]
+}

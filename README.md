@@ -12,7 +12,8 @@ Includes / Uses
 ## Usage
 
 ### Start
-- Fork this repository.
+- Fork this repository
+- find and replace `rweich/streamdeck-ts-template` in `package.json` and `README.md` with your repository name
 
 ### Init
 To install all the packages necessary run:
@@ -28,9 +29,9 @@ yarn install
 
 ### Configure
 - Open the [manifest.json](assets/manifest.json) file and apply the configuration based on the [documentation](https://developer.elgato.com/documentation/stream-deck/sdk/manifest/):
-  - Note: no need to set the _Version_ as that'll be done by the release workflow
+  - Note: no need to set the `Version` as that'll be done by the release workflow
 - add / change all the necessary icons to the [images](./assets/images) directory
-- if you dont need a propertyinspector -> remove the _PropertyInspectorPath_ from the manifest
+- if you dont need a propertyinspector -> remove `PropertyInspectorPath` from the manifest
 
 ### Build
 Build the development-version of the plugin with:
