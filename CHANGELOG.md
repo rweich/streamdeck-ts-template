@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/rweich/streamdeck-ts-template/compare/v1.0.0...v1.1.0) (2021-02-21)
+
+
+### Bug Fixes
+
+* build errors ([22b569c](https://github.com/rweich/streamdeck-ts-template/commit/22b569ceca1c71592f92f5d80785441e77b17cf4))
+
+
+### Features
+
+* added update-template package ([2afbdcd](https://github.com/rweich/streamdeck-ts-template/commit/2afbdcd27dd055e2e40c84ba8056b3dc2727e800))
+
 # 1.0.0 (2021-02-21)
 
 
