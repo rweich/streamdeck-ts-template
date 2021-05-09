@@ -38,7 +38,7 @@ yarn install
 - Open the [manifest.json](assets/manifest.json) file and apply the configuration based on the [documentation](https://developer.elgato.com/documentation/stream-deck/sdk/manifest/):
   - Note: no need to set the `Version` as that'll be done by the release workflow
 - add / change all the necessary icons to the [images](./assets/images) directory
-- if you dont need a propertyinspector -> remove `PropertyInspectorPath` from the manifest
+- if you don't need a propertyinspector -> remove `PropertyInspectorPath` from the manifest
 
 ### Build
 Build the development-version of the plugin with:
@@ -48,7 +48,7 @@ yarn build
 The resulting directory created in the dist directory can be copied into your streamdeck plugin folder as described in the [documentation](https://developer.elgato.com/documentation/stream-deck/sdk/create-your-own-plugin/).
 
 ### Release
-Start the release by manually by executing the [release workflow](.github/workflows/release.yml) in your github actions.
+Start the release by manually by executing the [release workflow](.github/workflows/release.yml) in your GitHub actions.
 This will use the current state of the main branch to create a plugin-archive that can be installed using the streamdeck software.
 
 ## Links

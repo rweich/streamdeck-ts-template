@@ -3,9 +3,24 @@ const manifestNs = require('./build/scripts/manifest').manifestNs;
 module.exports = {
   branches: 'main',
   plugins: [
-    '@semantic-release/commit-analyzer',
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "releaseRules": [
+          { "type": "chore", "release": "patch" },
+          { "type": "docs", "release": "patch" },
+          { "type": "refactor", "release": "patch" },
+          { "type": "style", "release": "patch" }
+        ]
+      }
+    ],
     '@semantic-release/release-notes-generator',
-    '@semantic-release/changelog',
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
+      }
+    ],
     [
       '@semantic-release/exec',
       {

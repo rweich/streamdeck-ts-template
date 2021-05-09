@@ -6,10 +6,10 @@
   "author": "rweich",
   "license": "MIT",
   "scripts": {
-    "ci": "yarn type-check && yarn lint && yarn set-plugin-version 0.0.0",
-    "clean": "rimraf ./dist/*",
     "build": "yarn clean && webpack --mode=development",
     "build-prod": "yarn clean && webpack --mode=production",
+    "ci": "yarn type-check && yarn lint && yarn set-plugin-version 0.0.0",
+    "clean": "rimraf ./dist/*",
     "lint": "eslint ./src/**/*.ts",
     "prepare": "husky install",
     "set-plugin-version": "ts-node build/scripts/set-plugin-version.ts",
