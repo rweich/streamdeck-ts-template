@@ -1,6 +1,7 @@
 # streamdeck-ts-template
 
 ![Build/Test](https://github.com/rweich/streamdeck-ts-template/workflows/Build%2FTest/badge.svg)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frweich%2Fstreamdeck-ts-template.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frweich%2Fstreamdeck-ts-template?ref=badge_shield)
 
 A template repository for creating streamdeck plugins in typescript using the [streamdeck-ts](https://github.com/rweich/streamdeck-ts) library.
 
@@ -55,3 +56,7 @@ This will use the current state of the main branch to create a plugin-archive th
 [Example implementaition of the NumberDisplay-plugin using this template.]()
 
 [Official Streamdeck developer documentation.](https://developer.elgato.com/documentation/)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frweich%2Fstreamdeck-ts-template.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frweich%2Fstreamdeck-ts-template?ref=badge_large)
