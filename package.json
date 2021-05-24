@@ -6,11 +6,11 @@
   "author": "rweich",
   "license": "MIT",
   "scripts": {
-    "ci": "yarn type-check && yarn lint && yarn set-plugin-version 0.0.0",
-    "clean": "rimraf ./dist/*",
     "build": "yarn clean && webpack --mode=development",
     "build-prod": "yarn clean && webpack --mode=production",
-    "lint": "eslint ./src/**/*.ts",
+    "ci": "yarn type-check && yarn lint && yarn set-plugin-version 0.0.0",
+    "clean": "rimraf ./dist/*",
+    "lint": "eslint 'src/**/*.ts'",
     "prepare": "husky install",
     "set-plugin-version": "ts-node build/scripts/set-plugin-version.ts",
     "type-check": "tsc --noEmit",
@@ -24,24 +24,21 @@
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-typescript": "^7.8.3",
     "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@rweich/eslint-config": "^1.1.0",
+    "@rweich/prettier-config": "^1.0.0",
     "@rweich/streamdeck-ts": "^2.0.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
     "@types/copy-webpack-plugin": "^8.0.0",
     "@types/jsonfile": "^6.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0",
     "babel-loader": "^8.2.2",
+    "conventional-changelog-conventionalcommits": "^4.6.0",
     "copy-webpack-plugin": "^9.0.0",
-    "eslint": "^7.27.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
     "jsonfile": "^6.1.0",
     "lint-staged": "^11.0.0",
-    "organize-imports-cli": "^0.8.0",
-    "prettier": "npm:@btmills/prettier",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.4.3",
     "ts-node": "^10.0.0",
@@ -52,14 +49,21 @@
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rweich/streamdeck-ts-template.git"
+  "repository": "rweich/streamdeck-ts-template",
+  "bugs": "https://github.com/rweich/streamdeck-ts-template/issues",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@rweich"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
-      "organize-imports-cli",
-      "prettier --write"
+      "prettier --write",
+      "eslint --quiet --fix"
     ]
-  }
+  },
+  "prettier": "@rweich/prettier-config"
 }
