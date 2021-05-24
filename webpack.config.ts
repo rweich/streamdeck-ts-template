@@ -1,9 +1,11 @@
 import * as path from 'path';
 import * as webpack from 'webpack';
-import copyWebpackPlugin from 'copy-webpack-plugin';
-import { manifestNs, manifestName } from './build/scripts/manifest';
 
-const config = (env: unknown, options: { mode: string; env: unknown }): webpack.Configuration => {
+import { manifestName, manifestNs } from './build/scripts/manifest';
+
+import copyWebpackPlugin from 'copy-webpack-plugin';
+
+const config = (environment: unknown, options: { mode: string; env: unknown }): webpack.Configuration => {
   let pluginNs = manifestNs;
   let pluginName = manifestName;
 
@@ -14,14 +16,14 @@ const config = (env: unknown, options: { mode: string; env: unknown }): webpack.
 
   return {
     entry: {
-      plugin: './build/entries/pluginEntry.ts',
-      propertyinspector: './build/entries/propertyinspectorEntry.ts',
+      plugin: './build/entries/PluginEntry.ts',
+      propertyinspector: './build/entries/PropertyinspectorEntry.ts',
     },
     target: 'web',
     output: {
-      path: path.resolve(__dirname, 'dist/' + pluginNs + '.sdPlugin/js'),
       library: 'connectElgatoStreamDeckSocket',
       libraryExport: 'default',
+      path: path.resolve(__dirname, 'dist/' + pluginNs + '.sdPlugin/js'),
     },
     plugins: [
       new copyWebpackPlugin({
@@ -31,7 +33,7 @@ const config = (env: unknown, options: { mode: string; env: unknown }): webpack.
             to: path.resolve(__dirname, 'dist/' + pluginNs + '.sdPlugin'),
             toType: 'dir',
             transform: (content, path) => {
-              if (!path.match(/\.(json|html)/)) {
+              if (!/\.(json|html)/.test(path)) {
                 return content;
               }
               return content

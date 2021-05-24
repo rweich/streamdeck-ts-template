@@ -16,6 +16,9 @@
     "type-check": "tsc --noEmit",
     "update-template": "update-template https://github.com/rweich/streamdeck-ts-template"
   },
+  "dependencies": {
+    "@rweich/streamdeck-ts": "^2.0.0"
+  },
   "devDependencies": {
     "@amille/semantic-release-plugins": "^3.3.10",
     "@babel/cli": "^7.14.3",
@@ -27,7 +30,6 @@
     "@commitlint/config-conventional": "^12.1.4",
     "@rweich/eslint-config": "^1.1.0",
     "@rweich/prettier-config": "^1.0.0",
-    "@rweich/streamdeck-ts": "^2.0.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
@@ -47,8 +49,7 @@
     "update-template": "^1.3.1",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
-  },
-  "dependencies": {},
+    },
   "repository": "rweich/streamdeck-ts-template",
   "bugs": "https://github.com/rweich/streamdeck-ts-template/issues",
   "commitlint": {
