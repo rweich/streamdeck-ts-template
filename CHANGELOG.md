@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.2](https://github.com/rweich/streamdeck-ts-template/compare/v2.0.1...v2.0.2) (2021-06-12)
+
+
+### Miscellaneous Chores
+
+* update dependencies ([#4](https://github.com/rweich/streamdeck-ts-template/issues/4)) ([ea2f2f3](https://github.com/rweich/streamdeck-ts-template/commit/ea2f2f348ee266576eab52a43f4fc3b5a0838985))
+
 ### [2.0.1](https://github.com/rweich/streamdeck-ts-template/compare/v2.0.0...v2.0.1) (2021-05-24)
 
 
