@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.3](https://github.com/rweich/streamdeck-ts-template/compare/v2.0.2...v2.0.3) (2021-08-05)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump tar from 6.1.0 to 6.1.5 ([5205f87](https://github.com/rweich/streamdeck-ts-template/commit/5205f87f0bd78c8d1dd278aae4eb6564c5562364))
+
 ### [2.0.2](https://github.com/rweich/streamdeck-ts-template/compare/v2.0.1...v2.0.2) (2021-06-12)
 
 
