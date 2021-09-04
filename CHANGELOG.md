@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/rweich/streamdeck-ts-template/compare/v2.0.3...v2.1.0) (2021-09-04)
+
+
+### Features
+
+* add 'dev' to the plugin/action names ([e8e0dc2](https://github.com/rweich/streamdeck-ts-template/commit/e8e0dc2a7751c71fbf202522e1008f6fb70b538d))
+
+
+### Miscellaneous Chores
+
+* update dependencies ([e2fe0dd](https://github.com/rweich/streamdeck-ts-template/commit/e2fe0ddd4c389f2e699a7d4efb1b5e2902930efd))
+
 ### [2.0.3](https://github.com/rweich/streamdeck-ts-template/compare/v2.0.2...v2.0.3) (2021-08-05)
 
 
