@@ -1,17 +1,15 @@
 import * as path from 'path';
 import * as webpack from 'webpack';
 
-import { manifestName, manifestNs } from './build/scripts/manifest';
+import { createDevelopmentManifest, manifestNs } from './build/scripts/manifest';
 
 import copyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = (environment: unknown, options: { mode: string; env: unknown }): webpack.Configuration => {
   let pluginNs = manifestNs;
-  let pluginName = manifestName;
 
   if (options.mode === 'development') {
     pluginNs = 'dev.' + manifestNs;
-    pluginName = manifestName + ' (dev)';
   }
 
   return {
@@ -33,15 +31,13 @@ const config = (environment: unknown, options: { mode: string; env: unknown }): 
             to: path.resolve(__dirname, 'dist/' + pluginNs + '.sdPlugin'),
             toType: 'dir',
             transform: (content, path) => {
-              if (!/\.(json|html)/.test(path)) {
+              if (options.mode === 'development' && /manifest\.json$/.test(path)) {
+                return createDevelopmentManifest();
+              }
+              if (!/\.html/.test(path)) {
                 return content;
               }
-              return content
-                .toString()
-                .replace(manifestNs, pluginNs)
-                .replace('{{ PLUGIN_NS }}', pluginNs)
-                .replace(manifestName, pluginName)
-                .replace('{{ PLUGIN_NAME }}', pluginName);
+              return content.toString().replace('{{ PLUGIN_NS }}', pluginNs);
             },
           },
         ],
