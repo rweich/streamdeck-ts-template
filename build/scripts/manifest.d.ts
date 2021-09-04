@@ -1,2 +1,2 @@
+export const createDevelopmentManifest: () => string;
 export const manifestNs: string;
-export const manifestName: string;
