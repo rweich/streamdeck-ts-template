@@ -3,6 +3,7 @@ import * as webpack from 'webpack';
 
 import { createDevelopmentManifest, manifestNs } from './build/scripts/manifest';
 
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import copyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = (environment: unknown, options: { mode: string; env: unknown }): webpack.Configuration => {
@@ -42,6 +43,7 @@ const config = (environment: unknown, options: { mode: string; env: unknown }): 
           },
         ],
       }),
+      new ForkTsCheckerWebpackPlugin(),
     ],
     module: {
       rules: [
