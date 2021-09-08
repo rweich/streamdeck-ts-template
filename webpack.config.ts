@@ -54,6 +54,18 @@ const config = (environment: unknown, options: { mode: string; env: unknown }): 
             loader: 'babel-loader',
           },
         },
+        {
+          test: /\.js$/,
+          enforce: 'pre',
+          use: [
+            {
+              loader: 'source-map-loader',
+              options: {
+                filterSourceMappingUrl: () => false,
+              },
+            },
+          ],
+        },
       ],
     },
     resolve: {
