@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/rweich/streamdeck-ts-template/compare/v2.1.0...v2.2.0) (2021-09-08)
+
+
+### Features
+
+* add ts checker webpack plugin ([05822b3](https://github.com/rweich/streamdeck-ts-template/commit/05822b359894e030e03593557373111aaac7ca38))
+
+
+### Bug Fixes
+
+* remove sourcemaps on build ([05336bd](https://github.com/rweich/streamdeck-ts-template/commit/05336bdf1fa885fe4eda00ba5cabeb6082d59362))
+* set noemit for typescript ([d63f69f](https://github.com/rweich/streamdeck-ts-template/commit/d63f69f0dd7ba7052ab4c76ad2203a1dc01be089))
+
 ## [2.1.0](https://github.com/rweich/streamdeck-ts-template/compare/v2.0.3...v2.1.0) (2021-09-04)
 
 
