@@ -1,7 +1,6 @@
 const manifestNs = require('./build/scripts/manifest').manifestNs;
 
 module.exports = {
-  branches: 'main',
   plugins: [
     [
       '@semantic-release/commit-analyzer',
