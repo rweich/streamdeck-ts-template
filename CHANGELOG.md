@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/rweich/streamdeck-ts-template/compare/v2.2.1...v3.0.0) (2022-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* the minimum required version of node is now v14.17
+
+### Miscellaneous Chores
+
+* drop support for node v12 and v15 ([b7ebe03](https://github.com/rweich/streamdeck-ts-template/commit/b7ebe0397561dd60a76bbff794fc5f079aead891))
+* update dependencies ([4a1965a](https://github.com/rweich/streamdeck-ts-template/commit/4a1965a21e857ea0efd4a82203e553a501a9b2a9))
+* upgrade dependencies (major) ([b798a24](https://github.com/rweich/streamdeck-ts-template/commit/b798a24f77f0be83214753215a1b43370adf3808))
+
 ### [2.2.1](https://github.com/rweich/streamdeck-ts-template/compare/v2.2.0...v2.2.1) (2021-09-15)
 
 
