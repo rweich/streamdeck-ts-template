@@ -52,6 +52,9 @@
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
   },
+  "engines": {
+    "node": ">=14.17"
+  },
   "repository": "rweich/streamdeck-ts-template",
   "bugs": "https://github.com/rweich/streamdeck-ts-template/issues",
   "commitlint": {
