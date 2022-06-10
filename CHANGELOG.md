@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.3](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.2...v3.0.3) (2022-06-10)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump semantic-release from 19.0.2 to 19.0.3 ([9a298d3](https://github.com/rweich/streamdeck-ts-template/commit/9a298d3e373f37694c861355ccad6d2a05edcd21))
+
 ### [3.0.2](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.1...v3.0.2) (2022-06-04)
 
 
