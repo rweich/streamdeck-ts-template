@@ -43,7 +43,7 @@
     "jsonfile": "^6.1.0",
     "lint-staged": "^12.3.3",
     "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.2",
+    "semantic-release": "^19.0.3",
     "source-map-loader": "^3.0.0",
     "ts-node": "^10.0.0",
     "ts-type-guards": "^0.7.0",
