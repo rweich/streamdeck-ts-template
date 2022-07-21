@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.4](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.3...v3.0.4) (2022-07-21)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump terser from 5.10.0 to 5.14.2 ([aade7a2](https://github.com/rweich/streamdeck-ts-template/commit/aade7a286559b8f56de8c20de29d4e8210562c6f))
+
 ### [3.0.3](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.2...v3.0.3) (2022-06-10)
 
 
