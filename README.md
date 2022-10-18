@@ -61,9 +61,10 @@ This packages comes with eslint / prettier and [my](https://github.com/rweich/es
 If you don't want to use that, remove the `@rweich/eslint-config` and `@rweich/prettier-config` packages. Then remove the `eslintConfig` and `prettier` keys in `package.json`.
 
 ## Links
-[Example implementaition of the NumberDisplay-plugin using this template.]()
 
-[Official Streamdeck developer documentation.](https://developer.elgato.com/documentation/)
+- Example implementation of the [NumberDisplay-plugin using this template.](https://github.com/rweich/streamdeck-ts-numberdisplay)
+- [streamdeck-formbuilder](https://github.com/rweich/streamdeck-formbuilder) to programmatically build forms for the property inspector
+- [Official Streamdeck developer documentation.](https://developer.elgato.com/documentation/)
 
 
 ## License
