@@ -6624,11 +6624,6 @@ ts-node@^10.0.0, ts-node@^10.4.0:
     make-error "^1.1.1"
     yn "3.1.1"
 
-ts-type-guards@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/ts-type-guards/-/ts-type-guards-0.7.0.tgz#8c1cebea4c22fb72dee37e77906ac5590a29b63c"
-  integrity sha512-f+IUliQzU09E8Ml5JwL+sxWenrebphNhy0LaCmkwACOvliuB7LxuAXUrAVfjwF+2PX5yMs9hfydBPR5lIIuUCA==
-
 tsconfig-paths@^3.12.0, tsconfig-paths@^3.9.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.12.0.tgz#19769aca6ee8f6a1a341e38c8fa45dd9fb18899b"
