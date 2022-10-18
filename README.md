@@ -52,6 +52,14 @@ The resulting directory created in the dist directory can be copied into your st
 Start the release by manually by executing the [release workflow](.github/workflows/release.yml) in your GitHub actions.
 This will use the current state of the main branch to create a plugin-archive that can be installed using the streamdeck software.
 
+## Misc
+
+### Eslint / Prettier
+
+This packages comes with eslint / prettier and [my](https://github.com/rweich/eslint-config) [own](https://github.com/rweich/prettier-config) very opinionated configuration.
+
+If you don't want to use that, remove the `@rweich/eslint-config` and `@rweich/prettier-config` packages. Then remove the `eslintConfig` and `prettier` keys in `package.json`.
+
 ## Links
 [Example implementaition of the NumberDisplay-plugin using this template.]()
 
