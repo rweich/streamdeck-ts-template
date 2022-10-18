@@ -14,7 +14,8 @@
     "prepare": "husky install",
     "set-plugin-version": "ts-node build/scripts/set-plugin-version.ts",
     "type-check": "tsc --noEmit",
-    "update-template": "update-template https://github.com/rweich/streamdeck-ts-template"
+    "update-template": "update-template https://github.com/rweich/streamdeck-ts-template",
+    "watch": "webpack watch --mode=development"
   },
   "dependencies": {
     "@rweich/streamdeck-ts": "^4.0.0"
