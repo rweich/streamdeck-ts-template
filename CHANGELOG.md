@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.5](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.4...v3.0.5) (2022-12-03)
+
+
+### Bug Fixes
+
+* error in watch-mode ([10c3a2f](https://github.com/rweich/streamdeck-ts-template/commit/10c3a2f44834b2701a6ac07467a42e06709e3f75))
+* make githooks executable ([12e5e83](https://github.com/rweich/streamdeck-ts-template/commit/12e5e835711155825e0e55db7753556ff42041ab))
+
+
+### Documentation
+
+* add a note about eslint/prettier ([6306a69](https://github.com/rweich/streamdeck-ts-template/commit/6306a6903a12b3d721fffd03b76077ff7c427600))
+* change links ([d875bfc](https://github.com/rweich/streamdeck-ts-template/commit/d875bfce731927a37133885055c3f4266fd76ace))
+
+
+### Miscellaneous Chores
+
+* **deps:** bump loader-utils from 1.4.0 to 1.4.2 ([d61a9fe](https://github.com/rweich/streamdeck-ts-template/commit/d61a9fe95dd0432d073eefe6bef9ae4d2d96f65c))
+* remove ts-type-guards package ([e0a22e1](https://github.com/rweich/streamdeck-ts-template/commit/e0a22e1adb8fd9eb44110d8526f39a6de69a13f2))
+* update dependencies ([7228f01](https://github.com/rweich/streamdeck-ts-template/commit/7228f0174339aed129c9ee211c62fa195d40cb06))
+
 ### [3.0.4](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.3...v3.0.4) (2022-07-21)
 
 
