@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.6](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.5...v3.0.6) (2023-01-08)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump json5 from 1.0.1 to 1.0.2 ([13914c6](https://github.com/rweich/streamdeck-ts-template/commit/13914c68e16e9d21661d2a5ad0d96b631dd0d5a2))
+
 ### [3.0.5](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.4...v3.0.5) (2022-12-03)
 
 
