@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.7](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.6...v3.0.7) (2023-07-29)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump webpack from 5.75.0 to 5.76.0 ([7bab745](https://github.com/rweich/streamdeck-ts-template/commit/7bab7451a29d49f8e5212f3671462c81926b5adb))
+* **deps:** bump http-cache-semantics from 4.1.0 to 4.1.1 ([5c6a49c](https://github.com/rweich/streamdeck-ts-template/commit/5c6a49ce3929d6c8b6a273338613f9484261f433))
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([7f1737c](https://github.com/rweich/streamdeck-ts-template/commit/7f1737c558a9ee55b1d23f89a7fc755daaf5ea35))
+* **deps:** bump word-wrap from 1.2.3 to 1.2.4 ([aea3ee6](https://github.com/rweich/streamdeck-ts-template/commit/aea3ee695c3b6a6fb58bc4bf61cc0dd5d9f26b8a))
+
 ### [3.0.6](https://github.com/rweich/streamdeck-ts-template/compare/v3.0.5...v3.0.6) (2023-01-08)
 
 
